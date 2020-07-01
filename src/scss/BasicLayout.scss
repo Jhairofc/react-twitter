@@ -1,0 +1,16 @@
+@import "./index.scss";
+.basic-layout{
+    &-menu{
+        padding-right: 0 !important;
+    }
+    &-content{
+        height: 100vh;
+        overflow-y: scroll;
+        padding: 0 !important;
+        border-right: 1px solid $border-grey;
+        //para que este presente el scroll en el content pero no visible
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}
